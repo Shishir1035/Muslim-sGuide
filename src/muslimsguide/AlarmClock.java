@@ -42,14 +42,14 @@ public class AlarmClock {
                 {
                     Calendar c = new GregorianCalendar();
                     int hours = c.get(Calendar.HOUR);
-                    int mins = c.get(Calendar.MINUTE);           
+                    int mins = c.get(Calendar.MINUTE);  
                     if(hr == hours && mn == mins)
                     {
                         alarmaudio();
                         JLabel label = new JLabel("Its Time For "+waqt+" Salah");
                         label.setFont(new Font("Times New Roman", Font.BOLD, 16));
                         JOptionPane.showMessageDialog(null,label,"Salah",JOptionPane.DEFAULT_OPTION);
-//                        JOptionPane.showMessageDialog(null, "Its "+waqt+" Time");
+                        JOptionPane.showMessageDialog(null, "Its "+waqt+" Time");
                         break;
                     }
                 }
