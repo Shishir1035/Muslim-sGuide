@@ -10,6 +10,21 @@ public class HomePage extends javax.swing.JFrame {
      * Creates new form HomePage
      */
     public HomePage() {
+        AlarmClock Fajr,Dhuhr,Asr,Maghrib,Isha;
+        Fajr = new AlarmClock();
+        Fajr.initalarm("Fajr",3,38);
+        
+        Dhuhr = new AlarmClock();
+        Dhuhr.initalarm("Dhuhr",11,50);
+        
+        Asr = new AlarmClock();
+        Asr.initalarm("Asr",3,14);
+        
+        Maghrib = new AlarmClock();
+        Maghrib.initalarm("Maghrib",6,34);
+        
+        Isha = new AlarmClock();
+        Isha.initalarm("Isha",1,11);
         initComponents();
     }
 
@@ -22,141 +37,141 @@ public class HomePage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        HadithText = new javax.swing.JLabel();
+        HadithLabel = new javax.swing.JLabel();
+        DateText = new javax.swing.JLabel();
+        ZillaText = new javax.swing.JLabel();
+        IftarText = new javax.swing.JLabel();
+        SahriText = new javax.swing.JLabel();
+        CurrentWaqt = new javax.swing.JLabel();
+        RemainingTimeText = new javax.swing.JLabel();
+        AlarmButton = new javax.swing.JButton();
+        TasbihButton = new javax.swing.JButton();
+        QHButton = new javax.swing.JButton();
+        MosqueButton = new javax.swing.JButton();
+        CommunityButton = new javax.swing.JButton();
+        HomeBGimg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(153, 153, 255));
-        jLabel1.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Daily Hadith Goes Here");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 830, 40));
+        HadithText.setBackground(new java.awt.Color(153, 153, 255));
+        HadithText.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
+        HadithText.setForeground(new java.awt.Color(255, 255, 255));
+        HadithText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HadithText.setText("Daily Hadith Goes Here");
+        getContentPane().add(HadithText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 830, 40));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 852, 60));
+        HadithLabel.setBackground(new java.awt.Color(0, 0, 0));
+        HadithLabel.setForeground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(HadithLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 852, 60));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 204, 153));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Date : 17 / 5 / 2022");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 140, 50));
+        DateText.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        DateText.setForeground(new java.awt.Color(0, 204, 153));
+        DateText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DateText.setText("Date : 17 / 5 / 2022");
+        getContentPane().add(DateText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 140, 50));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 204, 153));
-        jLabel5.setText("Zilla : Sylhet");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 160, 50));
+        ZillaText.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        ZillaText.setForeground(new java.awt.Color(0, 204, 153));
+        ZillaText.setText("Zilla : Sylhet");
+        getContentPane().add(ZillaText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 160, 50));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 204, 153));
-        jLabel6.setText("Iftar : 6 : 30 pm");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 260, 160, 40));
+        IftarText.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        IftarText.setForeground(new java.awt.Color(0, 204, 153));
+        IftarText.setText("Iftar : 6 : 30 pm");
+        getContentPane().add(IftarText, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 260, 160, 40));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 204, 153));
-        jLabel7.setText("Sahri : 4 : 30");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 226, 120, 30));
+        SahriText.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        SahriText.setForeground(new java.awt.Color(0, 204, 153));
+        SahriText.setText("Sahri : 4 : 30");
+        getContentPane().add(SahriText, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 226, 120, 30));
 
-        jLabel8.setFont(new java.awt.Font("Monotype Corsiva", 1, 48)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 255, 153));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Isha");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 350, 50));
+        CurrentWaqt.setFont(new java.awt.Font("Monotype Corsiva", 1, 48)); // NOI18N
+        CurrentWaqt.setForeground(new java.awt.Color(0, 255, 153));
+        CurrentWaqt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CurrentWaqt.setText("Isha");
+        getContentPane().add(CurrentWaqt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 350, 50));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Remaining Time : XX : XX");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 170, 370, 50));
+        RemainingTimeText.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        RemainingTimeText.setForeground(new java.awt.Color(204, 0, 0));
+        RemainingTimeText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        RemainingTimeText.setText("Remaining Time : XX : XX");
+        getContentPane().add(RemainingTimeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 170, 370, 50));
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 102));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jButton1.setText("Alarm");
-        jButton1.setBorder(new javax.swing.border.MatteBorder(null));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        AlarmButton.setBackground(new java.awt.Color(0, 153, 102));
+        AlarmButton.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        AlarmButton.setText("Alarm");
+        AlarmButton.setBorder(new javax.swing.border.MatteBorder(null));
+        AlarmButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                AlarmButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 122, 70));
+        getContentPane().add(AlarmButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 122, 70));
 
-        jButton2.setBackground(new java.awt.Color(0, 153, 102));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jButton2.setText("Tasbih");
-        jButton2.setToolTipText("");
-        jButton2.setBorder(new javax.swing.border.MatteBorder(null));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        TasbihButton.setBackground(new java.awt.Color(0, 153, 102));
+        TasbihButton.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        TasbihButton.setText("Tasbih");
+        TasbihButton.setToolTipText("");
+        TasbihButton.setBorder(new javax.swing.border.MatteBorder(null));
+        TasbihButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                TasbihButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 122, 70));
+        getContentPane().add(TasbihButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 122, 70));
 
-        jButton3.setBackground(new java.awt.Color(0, 153, 102));
-        jButton3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jButton3.setText("Quran & Hadith");
-        jButton3.setBorder(new javax.swing.border.MatteBorder(null));
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        QHButton.setBackground(new java.awt.Color(0, 153, 102));
+        QHButton.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        QHButton.setText("Quran & Hadith");
+        QHButton.setBorder(new javax.swing.border.MatteBorder(null));
+        QHButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        QHButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                QHButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 122, 70));
+        getContentPane().add(QHButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 122, 70));
 
-        jButton4.setBackground(new java.awt.Color(0, 153, 102));
-        jButton4.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jButton4.setText("Mosque");
-        jButton4.setBorder(new javax.swing.border.MatteBorder(null));
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 122, 70));
+        MosqueButton.setBackground(new java.awt.Color(0, 153, 102));
+        MosqueButton.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        MosqueButton.setText("Mosque");
+        MosqueButton.setBorder(new javax.swing.border.MatteBorder(null));
+        getContentPane().add(MosqueButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 122, 70));
 
-        jButton5.setBackground(new java.awt.Color(0, 153, 102));
-        jButton5.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jButton5.setText("Community");
-        jButton5.setBorder(new javax.swing.border.MatteBorder(null));
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 122, 70));
+        CommunityButton.setBackground(new java.awt.Color(0, 153, 102));
+        CommunityButton.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        CommunityButton.setText("Community");
+        CommunityButton.setBorder(new javax.swing.border.MatteBorder(null));
+        getContentPane().add(CommunityButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 122, 70));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/muslimsguide/Hnet.com-image (1).png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 852, 420));
+        HomeBGimg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/muslimsguide/Hnet.com-image (1).png"))); // NOI18N
+        getContentPane().add(HomeBGimg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 852, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void AlarmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlarmButtonActionPerformed
         // TODO add your handling code here:
         Alarm lrm = new Alarm();
         lrm.show();
 //        dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_AlarmButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void TasbihButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TasbihButtonActionPerformed
         // TODO add your handling code here:
         Tasbih tasbh = new Tasbih();
         tasbh.show();
 //        dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_TasbihButtonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void QHButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QHButtonActionPerformed
         // TODO add your handling code here:
         QuranHadith qh = new QuranHadith();
         qh.show();
 //        dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_QHButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -194,19 +209,19 @@ public class HomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton AlarmButton;
+    private javax.swing.JButton CommunityButton;
+    private javax.swing.JLabel CurrentWaqt;
+    private javax.swing.JLabel DateText;
+    private javax.swing.JLabel HadithLabel;
+    private javax.swing.JLabel HadithText;
+    private javax.swing.JLabel HomeBGimg;
+    private javax.swing.JLabel IftarText;
+    private javax.swing.JButton MosqueButton;
+    private javax.swing.JButton QHButton;
+    private javax.swing.JLabel RemainingTimeText;
+    private javax.swing.JLabel SahriText;
+    private javax.swing.JButton TasbihButton;
+    private javax.swing.JLabel ZillaText;
     // End of variables declaration//GEN-END:variables
 }
